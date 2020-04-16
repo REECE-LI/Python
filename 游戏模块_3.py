@@ -1,6 +1,6 @@
 import  pygame
 import sys
-from pygame.locals import *         # 必要的·一句话 将所有常量名导入
+from pygame.locals import *         # 必要的一句话 将所有常量名导入
 
 clock = pygame.time.Clock()
 pygame.init()
@@ -10,6 +10,7 @@ pygame.display.set_caption('这只是一个测验')
 background = (0, 0, 0)
 screen.fill(background)
 cat = pygame.image.load('cat.png')
+# 获取猫的当前位置
 position = cat.get_rect()
 speed = [0, 0]
 
